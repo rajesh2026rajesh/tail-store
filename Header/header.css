@@ -239,7 +239,7 @@ align-items: center;
 }
 
 .icon-2{
-    border: 1px solid #cfcfcf;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
