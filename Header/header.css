@@ -261,3 +261,154 @@ align-items: center;
 #search-Input.show{
     display: block;
 }
+
+.register-popup {
+    border: 1px solid #777;
+    padding: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.close-btn{
+    width: 100px;
+}
+.reg-btn{
+    font-size: 20px;
+    border: none;
+    color: #ddd;
+    background: #2563eb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 11px;
+}
+.dot{
+    color: red;
+}
+.form-text{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 12px;
+    color: #777
+}
+
+
+.close-btn{
+    width: 100px;
+}
+.reg-id{
+    display: none;
+    align-items: center;
+}
+.reg-end-heading{
+    color: #008000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+}
+.reg-text{
+    color: blue;
+    font-size: 30px;
+    padding-top: 12px;
+    text-align: center;
+}
+/*login form */
+
+.login-section {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.login-container {
+    background: #e5e5e5;
+    border-radius: 12px;
+    padding: 12px;
+}
+.login-popup {
+    border: 1px solid #777;
+    padding: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-heading {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Manrope", sans-serif;
+    color: #010717;
+}
+
+.dot-login{
+    color: red;
+}
+
+.login {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 18px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    color: #888;
+}
+.login-btn{
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    background: #2563eb;
+    font-size: 20px;
+    border: none;
+    color: #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 11px;
+}
+.login-id{
+    align-items: center;
+    display: none;
+
+}
+.login-end-heading{
+    color: #008000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+}
+.login-text{
+    color: blue;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 30px;
+}
