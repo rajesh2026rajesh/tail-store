@@ -316,9 +316,13 @@ align-items: center;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
+    position: relative;
 }
 .close-btn{
     width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 804px;
 }
 .reg-btn{
     font-size: 20px;
@@ -340,9 +344,6 @@ align-items: center;
 }
 
 
-.close-btn{
-    width: 100px;
-}
 .reg-id{
     display: none;
     align-items: center;
