@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section-hero*/
+
+.hero-section{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.hero-container{
+background-image: url(../Assets/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+
+.hero-text h2{
+    color: #fff;
+    font-size: 72px;
+    font-family: "Manrope", sans-serif;     
+}
+.hero-text p{
+    font-size: 24px;
+    color: #fff;
+    margin: 0 0 16px;
+    font-family: "Manrope", sans-serif;
+}
+.hero-button {
+font-size: 16px;
+font-family: "Manrope", sans-serif;
+color: #fff;
+text-decoration: none;
+padding: 8px 16px;
+background: #ff0050;
+border-radius: 30px;
+border: none;
+}
+.hero-button:hover{
+    color: #fff;
+    background: transparent;
+    outline: 1px solid #fff;
+}
+.arrow-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.arrow a img{
+    width: 80px;
+}
+
+/*cards section*/
+
+.card-section{
+    padding: 40px 0 60px 0;
+}
+.card-container{
+width: 100%;
+ /*max-width: 1140px;
+    margin: 0 auto; */
+}
+@media (min-width : 1220px) {
+    .card-container{
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+}
+.section-card-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 33px;
+}
+.card-text,
+.card-text-2,
+.card-text-3{
+    position: absolute;
+    z-index: 2;
+    top: 76px;
+    left: 142px;
+    text-align: center;
+}
+
+.card,
+.card-2,
+.card-3 {
+    position: relative;
+}
+
+.card::before,
+.card-2::before,
+.card-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Image */
+
+
+.card-images img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* Heading */
+
+.card-text h2{
+    color: #fff;
+    font-size: 30px;
+    margin: 0 0 16px;
+    font-family: "Manrope", sans-serif;
+}
+.card-text-2 h2{
+    color: #fff;
+    font-size: 30px;
+    margin: 0 0 16px;
+    font-family: "Manrope", sans-serif;
+}
+.card-text-3 h2{
+    color: #fff;
+    margin: 0 0 16px;
+    font-size: 30px;
+    font-family: "Manrope", sans-serif;
+}
+
+/* Button */
+.card-btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    background: #ff0050;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.card-btn:hover{
+    color: #fff;
+    background: transparent;
+    outline: 1px solid #fff;
+}
+
+/*product section*/
+
+.card-group{
+    border: 1px solid #fff;
+     box-shadow: -1px 19px 20px #00000012;
+    border-radius: 10px;
+   padding: 12px;
+    background: #fff;
+    
+}
+.product-section{
+     padding-bottom: 40px;
+}
+.popular-heading{
+    padding-bottom: 32px;
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+}
+.product-container{
+    width: 100%;
+    /*max-width: 1140px;
+    margin: 0 auto */
+}
+@media (min-width : 1220px) {
+    .product-container{
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+}
+.product-image img{
+    width: 100%;
+    border-radius: 6px;
+    margin: 0 0 16px;
+}
+.product-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.product-heading{
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+}
+.product-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.product-text p{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    margin: 8px 0;
+}
+.price{
+    font-size: 18px;
+    font-weight: 800;
+    color: #ff0050;
+}
+.product-text span{
+    text-decoration: line-through;
+    color: black;
+    font-size: 13px;
+    margin: 0 0 0 8px;
+    font-weight: 700;
+}
+.product-btn{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    background: #ff0050;
+    border-radius: 30px;
+    font-family: "Manrope", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+.product-btn:hover{
+   color: #ff0050;
+    background: transparent;
+    outline: 1px solid #ff0050;
+}
+
+
+
+/*2nd image*/
+
+.second-price{
+font-weight: 800;
+}
+/*3rd image*/
+.third-price{
+    font-weight: 800;
+}
+
+/*latest section*/
+
+.latest-section{
+ padding: 40px 0 50px 0;
+}
+.latest-container{
+    width: 100%;
+   /* max-width: 1140px;
+    margin: 0 auto; */
+}
+@media (min-width : 1220px) {
+    .latest-container{
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+}
+.latest-heading{
+    margin: 0 0 32px;
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+}
+.latest-product-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.latest-product-group{
+    border: 1px solid #fff;
+     box-shadow: -1px 19px 20px #00000012;
+    border-radius: 10px;
+  padding: 12px;
+    background: #fff;
+}
+.latest-image img{
+    width: 100%;
+    border-radius: 6px;
+    margin: 0 0 16px;
+}
+.latest-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.person-heading{
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+   
+}
+.latest-text p{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+margin: 8px 0;
+}
+.latest-price{
+    font-size: 18px;
+    font-weight: 800;
+    color: #ff0050;
+}
+.latest-text span{
+    text-decoration: line-through;
+    color: black;
+    font-size: 13px;
+    margin: 0 0 0 8px;
+    font-weight: 700;
+}
+.latest-btn{
+display: block;
+text-align: center;
+font-size: 16px;
+font-family: "Manrope", sans-serif;
+color: #fff;
+background: #ff0050;
+padding: 8px 16px;
+border-radius: 30px;
+text-decoration: none;
+border: none;
+cursor: pointer;
+}
+.latest-btn:hover{
+    color: #ff0050;
+    background: transparent;
+    outline: 1px solid #ff0050;
+}
+
+/* latest second image*/
+.latest-second-price{
+    font-weight: 800;
+}
+
+/* latest ssection third image*/
+.latest-third-price{
+font-weight: 800;
+}
+
+/*discover brand section*/
+
+.brand-section{
+padding: 80px 16px;
+}
+.brand-container{
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.brand-text{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+    margin: 0 0 80px;
+}
+.brand-heading{
+    font-family: "Manrope", sans-serif;
+    font-size: 48px;
+}
+.brand-content{
+    color: #ff0050;
+}
+.brand-text p{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px
+}
+
+.brand-small-image img{
+    width: 158px;
+}
+.brand-right-arrow img{
+    width: 40px;
+}
+.brand-left-arrow a img{
+    width: 40px;
+}
+.arrow-brand{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+/*shop section*/
+
+.shop-section {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.shop-container {
+    width: 100%;
+    /*max-width: 1240px;
+     margin: 0 auto; */
+    height: 420px;
+
+    background-image: url("../Assets/banner-image-shop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.shop-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+}
+@media (min-width : 1280px) {
+    .shop-container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+.button-group{
+    text-align: center;
+    z-index: 1;
+}
+
+.shop-text {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Manrope", sans-serif;
+}
+
+.shop-btn {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.shop-btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff003d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Manrope", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+.shop-btn:hover {
+    background: transparent;
+    color: #ff003d;
+    outline: 1px solid #ff003d;
+}
+
+/*section discover blog*/
+.blog-section{
+    padding: 64px 16px;
+}
+.blog-container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.blog-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-bottom: 70px;
+}
+.blog-heading{
+    font-family: "Manrope", sans-serif;
+    font-size: 48px;
+}
+.blog-text span{
+    color: #ff003d;
+}
+.blog-text p{
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+}
+.blog-image img{
+    width: 100%;
+    margin: 0 0 16px;
+    border-radius: 8px;
+}
+.blog-card-group{
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    padding-top: 50px;
+}
+.blog-card{
+    border: 1px solid #fff;
+     box-shadow: -1px 19px 20px #00000012;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  padding: 14px;
+    background: #fff;
+}
+.blog-text-2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 6px;
+}
+.blog-small-heading{
+    color: #ff0050;
+    font-family: "Manrope", sans-serif;
+    font-size: 12spx;
+}
+.big-heading{
+    font-size: 30px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    width: 338px;
+}
+.blog-text-2 p{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    width: 305px;
+    color: #4c4d56;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.blog-btn{
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #fff;
+  background: #ff0050;
+  font-size: 16px;
+  font-family: "Manrope",sans-serif;
+  border: none;
+  align-self: flex-start;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.blog-btn:hover{
+    color: #ff0050;
+    background: transparent;
+    outline: 1px solid #ff0050;
+}
+
+/*newsletter section*/
+
+.discount-section{
+    padding: 60px 0;
+}
+.discount-container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.discount-line{
+    border: none;
+    height: 1px;
+    background: #e5e5e5;
+}
+.discount-form{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.discount-heading{
+    font-family: "Manrope", sans-serif;
+    font-size: 30px;
+    margin-bottom: 34px;
+}
+
+.discount-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.discount-form span{
+    color: #ff0050;
+}
+ .news-input{
+    border-radius: 20px;
+    width: 260px;
+    padding:  10px 10px;
+    border: 1px solid #d1d5dc;
+} 
+.discount-btn{
+padding: 8px 16px;
+color: #fff;
+background: #ff0050;
+text-decoration: none;
+font-family: "Manrope", sans-serif;
+font-size: 16px;
+border-radius: 30px;
+border: none;
+cursor: pointer;
+}
+
+.discount-btn:hover{
+    color: #ff0050;
+background: transparent;
+outline: 1px solid #ff0050;
+}

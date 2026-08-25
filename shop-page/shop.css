@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*shop section*/
+.shop-page-section{
+   padding: 30px 30px 40px 30px;
+}
+.shop-page-container{
+    width: 100%;
+    @media (min-width : 1220px) {
+    .product-page-container{
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+}
+}
+
+/* button select*/
+.button-section-product{
+    display: flex;
+    gap: 20px;
+}
+
+.button-select{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.show-sale{
+    padding: 8px 16px;
+    color: #fff;
+    background: #ff0042;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    cursor: pointer;
+}
+.show-sale:hover{
+    color: #ff0042;
+    background: transparent;
+    outline: 1px solid #ff0042;
+}
+
+/*second button*/
+
+.list-view{
+    color: #fff;
+    background: #ff0042;
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    border-radius: 30px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.list-view:hover{
+    color: #ff0042;
+    background: transparent;
+    outline: 1px solid #ff0042;
+}
+
+/*third button*/
+
+.grid-veiw{
+    color: #fff;
+    background: #ff0042;
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    border-radius: 30px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.grid-veiw:hover{
+color: #ff0042;
+background: #fff;
+outline: 1px solid #ff0042;
+}
+
+/* select section*/
+
+.select-column{
+    border-radius: 30px;
+    padding: 8px 16px;
+    border: 1px solid;
+}
+.select-column:hover{
+    outline: 1px solid #ff0042;
+    border: none;
+}
+
+/* section 2 image handeled and text*/
+
+.text-group-checkbox{
+     border: 1px solid #fff;
+     box-shadow: -1px 19px 20px #00000012;
+    border-radius: 10px;
+   padding: 12px;
+    background: #fff;
+}
+.text-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.category-heading{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: "Manrope",sans-serif;
+}
+.category-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.label-text{
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    padding-left: 8px;
+}
+.line-in-checkbox{
+    border: none;
+    height: 1px;
+    background: #e5e5e5;
+    margin: 18px 0 18px 0;
+    width: 100%;
+}
+
+/* section image */
+.image-group-control{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 33px;
+}
+.card-group-product{
+    border: 1px solid #fff;
+     box-shadow: -1px 19px 20px #00000012;
+    border-radius: 10px;
+   padding: 12px;
+    background: #fff;
+}
+.product-image-group img{
+    width: 266px;
+    border-radius: 6px;
+    margin: 0 0 16px;
+}
+
+.product-heading{
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+}
+.product-text-2{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.product-text-2 p{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    margin: 8px 0;
+}
+.price-1{
+    font-size: 18px;
+    font-weight: 800;
+    color: #ff0050;
+}
+.product-text-2 span{
+    text-decoration: line-through;
+    color: black;
+    font-size: 13px;
+    margin: 0 0 0 8px;
+    font-weight: 700;
+}
+.product-btn-1{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    background: #ff0050;
+    border-radius: 30px;
+    font-family: "Manrope", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+.product-btn-1:hover{
+   color: #ff0050;
+    background: transparent;
+    outline: 1px solid #ff0050;
+}
+
+/*2nd image*/
+
+.second-price-2{
+font-weight: 800;
+}
+
+/*3rd image*/
+
+.third-price-3{
+    font-weight: 800;
+}
+
+/* buttons*/
+.buttons-group{
+    padding-top: 33px;
+   display: flex;
+   justify-content: center;
+   gap: 33px;
+}
+.first{
+    color: #fff;
+    background: #ff0050;
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 8px 13px;
+    cursor: pointer;
+}
+
+.second{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.second:hover{
+    color: #fff;
+    background: #ff0042;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 8px 13px;
+   
+}
+.third{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.third:hover{
+color: #fff;
+background: #ff0050;
+font-size: 16px;
+padding: 8px 13px;
+border-radius: 30px;
+}
+.text-forth{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+}
+/* shirt section*/
+
+.shirt-section{
+    width: 100%;
+    padding: 40px 12px;
+}
+.shirt-heading{
+    font-size: 24px;
+    font-family: "Manrope",sans-serif;
+    padding-bottom: 16px;
+}
+.simple-text{
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    padding-bottom: 16px;
+}
+.simple-text-2{
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+
+</head>
+<body>
+     <div class="tailstore-section">
+            <div class="tailstore-container">
+                <div class="tail-text-image">
+                  <img src="../Assets/template-white-logo.png" alt="text image">
+                </div>
+                <!--navigation-->
+
+
+                <div class="nav">
+                    <ul>
+                        <li><a href="/">Home </a></li>
+                        <li class="men-nav"><a href="../shop-page/shop.html">Men<img class="arrow-up" src="../Assets/arrow-up.png"> <img class="arrow-down" src="../Assets/arrow-down.png"></a>
+                        
+                        <div class="Men-item">
+                      <ul class="men-item-box">
+                          <li><a href="#">Men Item1</a></li>
+                        <li><a href="#">Men Item2</a></li>
+                        <li><a href="#">Men Item3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                        <li class="Women-nav"><a href="../shop-page/shop.html">Women<img class="arrow-up" src="../Assets/arrow-up.png"> <img class="arrow-down" src="../Assets/arrow-down.png"></a>
+                        <div class="Women-item">
+                            <ul class="Women-item-box">
+                          <li><a href="#">Women Item1</a></li>
+                        <li><a href="#">Women Item2</a></li>
+                        <li><a href="#">Women Item3</a></li>
+                    </ul>
+                        </div>
+                        </li>
+                        
+                        
+                        <li><a href="../shop-page/shop.html">Shop</a></li>
+                        <li><a href="../product/product.html">Product</a></li>
+                        <li><a href="../404-page/page.html">404 page</a></li>
+                        <li><a href="../checkout/checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+
+                <!-- 1st button-->
+
+                <div class="button">
+
+                    <!--1st form-->
+                <button type="button" class="bttn" onclick="openModel()">Register</button>
+
+                    <!--register popup-->
+
+                     <div id="my-form" class="register-popup">
+                     <div class="form-section">
+                    <div class="form-container">
+                <form class="information-user" onsubmit="regSubmit(event)">
+                        <h2 class="form-heading">Register</h2>
+                       
+                       <label for="Name"> <span class="dot">*</span>  Name</label>
+                        <input type="text" id="Name" name="Name" placeholder=" Enter your Name" required class="account">
+                       
+
+                    <!--second-->
+                    <label for="Email"> <span class="dot">*</span>    Email</label>
+                    <input type="text" id="Email" name="Email Address" placeholder=" Enter Your Email Address"   required     class="account">
+                
+
+                    <!--third-->
+
+                    <label for="Password"> <span class="dot">*</span>   Password</label>
+                    <input type="password"  id="password"  name="Password" placeholder=" Enter your Password"   required  class="account">
+                    
+                    <!--forth-->
+                    <label for=" Confirm password">  <span class="dot">*</span>        Confirm password</label>
+                    <input type="password"  id="Confirm password" name="Confirm password" placeholder=" Enter your Confirm password"  required   class="account">
+
+                    <button type="submit" class="reg-btn">Register</button>
+                    </form>
+                <div id="ThankYou" class="reg-id">
+                    <h2 class="reg-end-heading">Thank You</h2>
+                    <p class="reg-text">Your Register successful.</p>
+                </div>
+                </div>
+                    </div>
+                    <button type="button" class="close-btn" onclick="closeModel()">close</button>
+                </div>
+
+
+                <!--second button-->
+
+                <button type="button" class="bttn" onclick="loginopenModel()">Login</button>
+
+                <div id="login-page" class="login-popup">
+                
+                    <!--login section-->
+
+                    <div id="loginform" class="login-section">
+                        <div class="login-container">
+                    <form class="login-form" onsubmit="loginSubmit(event)">
+                        <h2 class="login-heading">Login</h2>
+
+                        <!--1st form-->
+
+                        <label for="Email"> <span class="dot-login">*</span>    Email</label>
+                        <input type="text" id="Email"    name="Email" placeholder="Email"  required     class="login">
+
+                        <!--2nd form-->
+                        <label for="Password"><span class="dot-login">*</span>Password </label>
+                        <input type="password" name="password" placeholder="password"  required    class="login">
+                    
+                    <button type="submit" class="login-btn">login</button>
+                </form>
+
+                <div id="thankYou" class="login-id">
+                    <h2 class="login-end-heading">Thank You</h2>
+                    <p class="login-text">Your login successful.</p>
+                </div>
+                    </div>
+                    </div>
+                    <button type="button"  class="login-close-btn" onclick="logincloseModel()">close</button>
+                     </div>
+            
+                    <!--icon-->
+
+                    <div class="icon">
+                    
+                         
+                        
+
+                        <div class="icon-1">
+                        <img src="../Assets/Icons/cart-shopping-image.svg" alt="shopping">
+                            <span id="cartcount">0</span>
+                    </div>
+                
+                        
+                        <div class="icon-2">
+                            <input type="text" name="search"  id="search-Input" placeholder="search product">  
+                         <button onclick="opensearch()" class="search-button">
+                            
+                            <img src="../Assets/Icons/search-icon-image.svg" alt="search icon">
+                        </button>
+                       
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <script src="header.js"></script>
+</body>
+</html>

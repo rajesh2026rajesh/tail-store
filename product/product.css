@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*product section*/
+
+.pro-section{
+    width: 100%;
+    padding-top: 30px;
+}
+.pro-container{
+    width: 100%;
+}
+@media (min-width : 1220px) {
+    .pro-container{
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+    
+}
+.ul-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.ul-list li {
+    font-size: 16px;
+}
+
+.nav-1 li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.list-span {
+    color: #555;
+}
+
+/*image and text*/
+.T-shirt-section-image{
+    display: flex;
+    gap: 30px;
+    padding: 20px 0 30px 0;
+}
+
+
+
+
+.small-images-group{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 12px;
+}
+
+
+.first-image img{
+    width: 612px;
+    border-radius: 10px;
+}
+.small-1-image img{
+    width: 110px;
+    border-radius: 10px;
+}
+
+/*pre t shirt*/
+
+.pre-shirt{
+    width: 100%;
+}
+.text-grup{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 26px;
+    gap: 14px;
+    font-family: "Manrope",sans-serif;
+    font-size: 16px;
+}
+.pree-heading{
+    font-family: "Manrope",sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.reviews{
+    font-size: 16px;
+    padding-bottom: 32px;
+}
+.review-show{
+    padding-left: 10px;
+}
+.text-color{
+    color: #ff0045;
+    padding-left: 12px;
+}
+.bold{
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    font-weight: bold;
+}
+
+/*buttons and number*/
+
+.buttons-num {
+    border-top: 1px solid #ddd;
+    padding-top: 18px;
+    padding-bottom: 28px;
+    
+}
+
+.number-heading {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 32px 0;
+}
+
+.buttons-quant-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.quant-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #ff0050;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.quant-btn:hover{
+    color: #ff0045;
+    background: transparent;
+    outline: 1px solid #ff0045;
+}
+
+.quant-number {
+    width: 28px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.add-btn {
+    border: none;
+    background: #ff0050;
+    color: #fff;
+    padding: 11px 18px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.add-btn:hover{
+    color: #ff0045;
+    background: transparent;
+    outline: 1px solid #ff0045;
+}
+
+/* icon*/
+
+.icon-group-pro{
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0;
+}
+.social-icon-1 img{
+    width: 16px;
+}
+.social-icon-1 img:hover{
+    transform: scale(1.1);
+}
+.social-img-grup{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* Product Description */
+
+.discription-section {
+    padding-top: 28px;
+}
+
+.discription-heading {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    margin: 0 0 12px;
+}
+
+.product-text {
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+}
+
+/* description page other pages */
+.Tab-pages{
+    width: 100%;
+}
+.heading-desc{
+    display: flex;
+    padding-top: 50px;
+    gap: 40px;
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+}
+.all-heading{
+    color: #000;
+    cursor: pointer;
+}
+
+.all-content-group{
+    display: flex;
+   justify-content: center;
+    padding-top: 40px;
+    width: 100%;
+    gap: 50px;
+}
+.description-section-1{
+    width: 100%;
+}
+.discription-heading-deatils{
+    font-size: 20px;
+    font-family: "Manrope",sans-serif;
+    padding-bottom: 10px;
+}
+.deatils-text{
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    width: 591px;
+}
+.quantity-deatils{
+    font-weight: bold;
+}
+/*second */
+.meterials-section{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.short-deatils{
+    font-family: "Manrope",sans-serif;
+    font-size: 16px;
+    padding-bottom: 11px;
+}
+
+.short-deatils-1{
+    font-family: "Manrope",sans-serif;
+    font-size: 16px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 11px;
+    width: 80%;
+}
+
+/* addititonal information */
+
+.Additional-section{
+    width: 100%;
+    padding: 20px 0 0 0;
+   
+}
+.top-info{
+    font-size: 16px;
+     font-family: "Manrope",sans-serif;
+     padding-bottom: 5px;
+}
+
+.additi-heading{
+    font-family: "Manrope",sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.additi-content{
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    color: #505663;
+}
+.uniq-color{
+    color: #ff0050;
+}
+.additi-info{
+    padding-bottom: 28px;
+}
+.additi-info-2{
+    padding-bottom: 28px;
+}
+.additi-info-3{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+
+/* 3rd info */
+
+.size-shap-section {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.size-shap-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: #1d3b61;
+}
+
+/* Header */
+.size-shap-table thead tr {
+    background-color: #f1f2f3;
+}
+
+.size-shap-table th {
+    text-align: left;
+    padding: 14px 23px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Body */
+.size-shap-table td {
+    padding: 17px 23px;
+    font-size: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 4th info */
+.review-head{
+    font-size: 18px;
+    font-family: "Manrope",sans-serif;
+}
+.review-head{
+    width: 100%;
+    padding-top: 30px;
+}
+.heigh-rating{
+    padding: 40px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.blue-heading{
+    color: #36416f;
+    font-family: "Manrope",sans-serif;
+    font-size: 18px;
+}
+.star{
+    color: #ff0050;
+}
+.rating-text{
+    font-family: "Manrope",sans-serif;
+    font-size: 16px;
+}
+
+/* 2nd commt */
+
+.heigh-rating-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0 20px 0;
+}
+
+/* form rating */
+
+.write-review {
+    width: 100%;
+    padding: 0;
+}
+
+.review-write-heading {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+/* Name, Email, Rating row */
+.form-review {
+    display: flex;
+    gap: 10px;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels */
+.label-text-box,
+.label-input label {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #142b48;
+}
+
+/* Name and Email input */
+.input-text-box {
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #d1d7df;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Rating */
+.star-rating {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #d1d7df;
+    border-radius: 6px;
+   
+}
+
+.form-review textarea.input-text-box {
+    height: 96px; 
+}
+.input-text-boxes {
+    width: 100%;
+    height: 100px;
+    padding: 8px 12px;
+    border: 1px solid #d1d7df;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* Submit button */
+.submit-review {
+    margin-top: 16px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    background: #ff0048;
+    color: white;
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+    cursor: pointer;
+}
+.submit-review:hover{
+    color: #ff0048;
+    background: transparent;
+    outline: 1px solid #ff0050;
+
+}
+
+
+
+/* test */
+
+.heading-desc {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+.all-heading {
+    margin: 0;
+    padding: 0 15px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.all-heading.active {
+    color: #ff0050;
+    border-bottom: 2px solid #ff0050;
+}
+
+
+/* Initially all hidden */
+#description,
+#Additional-info,
+#size-info,
+#review-info {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*latest section*/
+
+.latest-section{
+ padding: 40px 0 50px 0;
+}
+.latest-container{
+    width: 100%;
+   /* max-width: 1140px;
+    margin: 0 auto; */
+}
+@media (min-width : 1220px) {
+    .latest-container{
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+}
+.latest-heading{
+    margin: 0 0 32px;
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+}
+.latest-product-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.latest-product-group{
+    border: 1px solid #fff;
+     box-shadow: -1px 19px 20px #00000012;
+    border-radius: 10px;
+  padding: 12px;
+    background: #fff;
+}
+.latest-image img{
+    width: 100%;
+    border-radius: 6px;
+    margin: 0 0 16px;
+}
+.latest-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.person-heading{
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+   
+}
+.latest-text p{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+margin: 8px 0;
+}
+.latest-price{
+    font-size: 18px;
+    font-weight: 800;
+    color: #ff0050;
+}
+.latest-text span{
+    text-decoration: line-through;
+    color: black;
+    font-size: 13px;
+    margin: 0 0 0 8px;
+    font-weight: 700;
+}
+.latest-btn{
+display: block;
+text-align: center;
+font-size: 16px;
+font-family: "Manrope", sans-serif;
+color: #fff;
+background: #ff0050;
+padding: 8px 16px;
+border-radius: 30px;
+text-decoration: none;
+border: none;
+cursor: pointer;
+}
+.latest-btn:hover{
+    color: #ff0050;
+    background: transparent;
+    outline: 1px solid #ff0050;
+}
+
+/* latest second image*/
+.latest-second-price{
+    font-weight: 800;
+}
+
+/* latest ssection third image*/
+.latest-third-price{
+font-weight: 800;
+}
+
+
+.review-form-container{
+    display: flex;
+    flex-direction: column;
+}

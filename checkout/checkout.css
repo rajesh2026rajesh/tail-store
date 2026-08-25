@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* check out section*/
+.checkout-section{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.checkout-container{
+    width: 100%;
+    /*max-width: 1140px;
+    margin: 0 auto; */
+}
+@media (min-width : 1220px) {
+    .checkout-container{
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+    
+}
+.checkout-group{
+    display: flex;
+}
+.form-group-billing{
+    border: 1px solid #fff;
+     box-shadow: -1px 19px 20px #00000012;
+    border-radius: 10px;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+.billing-heading{
+    padding-bottom: 16px;
+    font-family: "Manrope",sans-serif;
+    font-size: 20px;
+}
+.label-box{
+    font-size: 16px;
+    font-family: "Manrope",sans-serif;
+}
+.billing-form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.input-box{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.second-group-form{
+    display: flex;
+    gap: 16px;
+}
+
+.group-input{
+    display: flex;
+    flex-direction: column;
+   width: 50%;
+   gap: 14px;
+}
+
+.input-boxs{
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.input-boxes{
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid;
+}
+
+.zip-group{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 14px;
+}
+
+.input-box-2{
+    margin-right: 10px;
+}
+
+/* summary section*/
+
+.order-summary-section {
+    width: 100%;
+    max-width: 310px;
+}
+
+.order-summary-total-group {
+    padding: 25px 13px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: -1px 19px 20px #00000012;
+}
+
+.order-summary-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    font-family: "Manrope",sans-serif;
+}
+
+/* Subtotal, Taxes, Shipping */
+
+.order-total-number-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order-small-heading {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Manrope",sans-serif;
+}
+
+.order-sub-sum {
+    font-size: 16px;
+}
+
+/* Total */
+
+.order-final-total {
+    border-top: 1px solid #ddd;
+    padding-top: 18px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-heading-2,
+.sub-sum-2 {
+    font-weight: 600;
+    font-family: "Manrope",sans-serif;
+    font-size: 16px;
+}
+
+/* Checkout button */
+
+.checkout-button-1 {
+    width: 100%;
+    height: 41px;
+    border: none;
+    border-radius: 25px;
+    background: #ff0042;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Manrope",sans-serif;
+   
+}
+
+.checkout-button-1:hover {
+    color: #ff0042;
+    background: #fff;
+    outline: 1px solid #ff0042;
+}

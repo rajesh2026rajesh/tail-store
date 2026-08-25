@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<div class="cart-section">
+<div class="cart-container">
+
+    <h2 class="cart-heading">Shopping Cart</h2>
+    <table class="product-box">
+        <thead>
+            <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+            </tr>
+        </thead>
+
+        
+            <tbody>
+
+                <!-- Product 1 -->
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="../Assets/product-image-1.jpg" alt="Summer black dress">
+                            <span>Summer black dress</span>
+                        </div>
+                    </td>
+
+                    <td>$19.99</td>
+
+                    <td>
+                        <div class="quantity">
+                            <button type="button" onclick="minustocart()">−</button>
+                            <span id="cartcount">1</span>
+                            <button type="button" onclick="addtocart()">+</button>
+                        </div>
+                    </td>
+
+                    <td>$19.99</td>
+                </tr>
+
+
+                <!-- Product 2 -->
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="../Assets/product-image-2.jpg" alt="Black suit">
+                            <span>Black suit</span>
+                        </div>
+                    </td>
+
+                    <td>$19.99</td>
+
+                    <td>
+                        <div class="quantity">
+                            <button type="button" onclick="minustocartt()">−</button>
+                            <span id="cartcountt">1</span>
+                            <button type="button" onclick="addtocartt()">+</button>
+                        </div>
+                    </td>
+
+                    <td>$19.99</td>
+                </tr>
+
+            </tbody>
+
+        
+
+    </table>
+    
+         
+
+
+        <div class="button-group-product">
+             <div class="coupon-button">
+
+            <div class="coupon">
+                <input type="text" placeholder="Coupon code">
+                <button type="button">Apply Coupon</button>
+            </div>
+
+            <div class="cart-buttons">
+                <button type="button">Empty Cart</button>
+                <button type="button">Update Cart</button>
+            </div>
+
+            </div> 
+        </div>
+            
+    </div>
+
+<!--summary section-->
+
+   <div class="summary-section">
+    <div class="summary-total-group">
+    <h3 class="summary-heading">summary</h3>
+
+    <!--1st total-->
+    <div class="total-number-products">
+        <h5 class="small-heading">Subtotal</h5>
+        <p class="sub-sum">$19.99</p>
+    </div>
+
+    <!--2nd total-->
+
+    <div class="total-number-products">
+        <h5 class="small-heading">Taxes</h5>
+        <p class="sub-sum">$1.99</p>
+    </div>
+
+    <!--3rd total-->
+
+    <div class="total-number-products">
+        <h5 class="small-heading">Shipping</h5>
+        <p class="sub-sum">$0.00</p>
+    </div>
+
+    <!--total-->
+
+    <div class="final-total">
+            <h5 class="small-heading-1">Total</h5>
+            <p class="sub-sum">$21.98</p>
+    </div>
+
+     <!-- Checkout -->
+        <button type="button" onclick="window.location.href ='../checkout/checkout.html';" class="checkout-button">
+            Proceed to checkout
+        </button>
+
+    </div>
+   </div>
+</div>
+
+<script src="cart.js"></script>
+</body>
+</html>

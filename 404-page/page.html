@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+</head>
+<body>
+
+
+
+<header id="header"></header>
+
+
+
+
+
+
+
+    <!--page-section-->
+    <div class="page-section">
+        <div class="page-container">
+            <div class="page-text-heading">
+                <h2 class="page-text">404 - Page Not Found</h2>
+                <p class="page-content">The page you are looking for might have been removed renamed, or is temporary unavailable.</p>
+                <button  onclick="window.location.href='../home-page/home.html';" class="page-content-button">Go back</button>
+            </div>
+
+            <!--iamge-->
+            <div class="image-section">
+            
+            <img src="../Assets/customer-stories-blog.jpg">
+            </div>
+        </div>
+    </div>
+
+
+<footer id="footer"></footer>
+
+    
+
+    <script>
+
+
+function include(file, elementId) {
+    fetch(file)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => {
+            console.log("Error:", error);
+        });
+}
+
+include("../Header/header.html", "header");
+
+include("../Footer/footer.html", "footer"); 
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+<script src="../Header/header.js"></script>
+
+</body>
+</html>

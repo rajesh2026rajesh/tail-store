@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+</head>
+<body>
+
+
+<header id="header"></header>
+
+
+
+
+
+
+
+
+
+
+
+    <!--check out section-->
+    <div class="checkout-section">
+        
+   
+        <div class="checkout-container">
+            <h3 class="billing-heading">Checkout</h3>
+         
+            <div class="checkout-group">
+            <!--section billing-deatils-->
+
+            <div class="form-group-billing">
+                <h3 class="billing-heading">Billing Deatils</h3>
+                <form class="billing-form">
+
+                    <label for="Full-Name" class="label-box">Full Name</label>
+                    <input type="text" id="Full-Name" name="Full Name" required class="input-box">
+                
+                <label for="Email" class="label-box">Email</label>
+                <input type="text" id="Email" name="Email"  required    class="input-box">
+
+                <label for="Address" class="label-box">Address</label>
+                <input type="text" id="Address" name="Address"  required        class="input-box">
+
+                <label for="city" class="label-box">City</label>
+                <input type="text" id="city" name="city"     required        class="input-box">
+
+               <div class="second-group-form">
+
+                <div class="group-input">
+                <label for="state" class="label-boxs">State</label>
+                <input type="text" id="state" name="state"      required     class="input-boxes">
+                </div>
+                <div class="zip-group">
+
+                <label for="ZIP" class="label-boxs">ZIP Code</label>
+                <input type="tel" id="ZIP" name="ZIP"     required         class="input-boxes">
+               </div>
+               </div>
+
+               <label for="Phone-number" class="label-box">Phone Number</label>
+               <input type="tel" id="Phone-number" name="Phone-number"  required    class="input-box">
+                
+               <div class="checkbox-content">
+                <label for="correct" class="label-box-2">Ship to a different adderes?</label>
+                <input type="checkbox" id="correct" class="input-box-2">
+                <label for="yes" class="label-boxes">Yes</label>
+            </div>
+                
+                </form>
+            </div>
+        
+
+        <!--summary section-->
+
+   <div class="order-summary-section">
+    <div class="order-summary-total-group">
+    <h3 class="order-summary-heading"> Order summary</h3>
+
+    <!--1st total-->
+    <div class="order-total-number-product">
+        <h5 class="order-small-heading">Subtotal</h5>
+        <p class="order-sub-sum">$59.00</p>
+    </div>
+
+    <!--2nd total-->
+
+    <div class="order-total-number-product">
+        <h5 class="order-small-heading">Shipping</h5>
+        <p class="order-sub-sum">$10.00</p>
+    </div>
+
+    <!--total-->
+
+    <div class="order-final-total">
+            <h5 class="small-heading-2">Total</h5>
+            <p class="sub-sum-2">$69.00</p>
+    </div>
+
+     <!-- Checkout -->
+        <button type="button" class="checkout-button-1">
+            Proceed to Payment
+        </button>
+
+    </div>
+   </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+<footer id="footer"></footer>
+
+    
+
+    <script>
+
+
+function include(file, elementId) {
+    fetch(file)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => {
+            console.log("Error:", error);
+        });
+}
+
+include("../Header/header.html", "header");
+
+include("../Footer/footer.html", "footer"); 
+
+
+    </script>
+
+
+
+<script src="../Header/header.js"></script>
+</body>
+</html>

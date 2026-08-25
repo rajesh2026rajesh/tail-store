@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Header/header.css">
+</head>
+<body>
+    <div class="main-container">
+       
+
+        
+        
+                 
+<header id="header"></header>
+
+   <div id="home"></div>    
+          
+
+
+<footer id="footer"></footer>
+
+    </div>
+
+    <script>
+
+
+function include(file, elementId) {
+    fetch(file)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => {
+            console.log("Error:", error);
+        });
+}
+
+include("./Header/header.html", "header");
+include("./home-page/home.html", "home");
+include("./Footer/footer.html", "footer"); 
+
+
+    </script>
+    <script src="Header/header.js"></script>
+</body>
+</html>
