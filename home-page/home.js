@@ -1,14 +1,5 @@
 let image = ["../Assets/first-js.svg","../Assets/second-ts.svg","../Assets/third-php.svg","../Assets/forth-tailwind.svg","../Assets/fifth-laravel.svg","../Assets/sixth-react.svg"];
 let index = 0;
-let brandImages = document.querySelectorAll(".brand-small-image img");
-
-function showImage() {
-    brandImages.forEach(function(img) {
-        img.style.display = "none";
-    });
-
-    brandImages[index].style.display = "block";
-}
 
 function next() {
     index++;
