@@ -409,8 +409,8 @@ padding: 80px 16px;
     width: 40px;
     cursor: pointer;
 }
-.brand-left-arrow img{
-    width: 40px;
+body #slide {
+    width: 40px !important;
     cursor: pointer;
 }
 .arrow-brand{

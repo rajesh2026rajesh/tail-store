@@ -5,7 +5,7 @@ function next() {
     if(index >=imges.length){
         index = 0;
     }
-document.getElementById("slide").src = image[index];
+document.getElementById("right-arrow").src = image[index];
 }
 
 function previous() {
@@ -13,26 +13,5 @@ function previous() {
     if(index <0){
         index = images.length -1;
     }
-    document.getElementById("slide").src = image[index];
+    document.getElementById("left-arrow").src = image[index];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
