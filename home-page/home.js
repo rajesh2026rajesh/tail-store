@@ -10,7 +10,7 @@ document.getElementById("brand-image").src = image[index];
 
 function previous() {
     index--;
-    if(index <= 0){
+    if(index < 0){
         index = image.length -1;
     }
     document.getElementById("brand-image").src = image[index];
