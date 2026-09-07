@@ -409,7 +409,7 @@ padding: 80px 16px;
     width: 40px;
     cursor: pointer;
 }
-body #slide {
+body #left-arrow {
     width: 40px !important;
     cursor: pointer;
 }
