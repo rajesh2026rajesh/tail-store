@@ -2,7 +2,7 @@ let image = ["../Assets/first-js.svg","../Assets/second-ts.svg","../Assets/third
 let index = 0;
 function next() {
     index++;
-    if(index >=imges.length){
+    if(index >=image.length){
         index = 0;
     }
 document.getElementById("right-arrow").src = image[index];
@@ -11,7 +11,7 @@ document.getElementById("right-arrow").src = image[index];
 function previous() {
     index--;
     if(index <0){
-        index = images.length -1;
+        index = image.length -1;
     }
     document.getElementById("left-arrow").src = image[index];
 }
