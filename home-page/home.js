@@ -1,4 +1,4 @@
-let images = ["../Assets/first-js.svg","../Assets/second-ts.svg","../Assets/third-php.svg","../Assets/forth-tailwind.svg","../Assets/fifth-laravel.svg","../Assets/sixth-react.svg"];
+let image = ["../Assets/first-js.svg","../Assets/second-ts.svg","../Assets/third-php.svg","../Assets/forth-tailwind.svg","../Assets/fifth-laravel.svg","../Assets/sixth-react.svg"];
 let index = 0;
 function next() {
     index++;
